@@ -1,0 +1,39 @@
+schema:
+  type: array
+  items:
+    type: object
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      integrations:
+        type: object
+        properties:
+          zoom:
+            type: object
+            properties:
+              oauth:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                  token_type:
+                    type: string
+                  refresh_token:
+                    type: string
+                  expires_in:
+                    type: number
+                  scope:
+                    type: string
+              user:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  pmi:
+                    type: number
+                  use_pmi:
+                    type: boolean
+                  created_at:
+                    type: string

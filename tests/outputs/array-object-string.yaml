@@ -1,0 +1,7 @@
+schema:
+  type: array
+  items:
+    type: object
+    properties:
+      test:
+        type: string

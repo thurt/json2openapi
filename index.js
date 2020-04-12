@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const json2yaml = require("./json2yaml");
 const converter = require("./converter");
 

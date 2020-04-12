@@ -2,7 +2,10 @@
   "name": "json-to-openapi-schema",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "converter.js",
+  "bin": {
+    "json2openapi": "./index.js"
+  },
   "dependencies": {
     "json2yaml": "^1.1.0",
     "yamljs": "^0.3.0"
@@ -11,8 +14,7 @@
     "tape": "^4.13.2"
   },
   "scripts": {
-    "test": "NODE_TAPE_OBJECT_PRINT_DEPTH=100 tape converter.test.js",
-    "start": "node index.js"
+    "test": "NODE_TAPE_OBJECT_PRINT_DEPTH=100 tape converter.test.js"
   },
   "keywords": [],
   "author": "",
